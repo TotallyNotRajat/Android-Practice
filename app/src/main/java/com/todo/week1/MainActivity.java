@@ -12,7 +12,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 private int count = 0;
-    Button btnCount;
+Button btnCount;
+Button reset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +23,7 @@ private int count = 0;
 
         btnCount = findViewById(R.id.btnCounter);
         TextView txt = findViewById(R.id.txtName);
-        Button reset = findViewById(R.id.btnReset);
+        reset = findViewById(R.id.btnReset);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
